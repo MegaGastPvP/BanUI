@@ -1,4 +1,4 @@
- <?php
+<?php
 
 namespace BanUI;
 use pocketmine\Server;
@@ -22,7 +22,7 @@ class Main extends PluginBase implements Listener {
     }	
     public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool {		
 		switch($cmd->getName()){		
-			case "bangui":
+			case "banui":
 				if($sender instanceof Player) {	
 					$api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");				
 					if($api === null || $api->isDisabled()){					
