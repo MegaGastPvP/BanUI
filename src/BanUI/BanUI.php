@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 namespace BanUI;
 use pocketmine\Server;
@@ -20,7 +20,7 @@ class Main extends PluginBase implements Listener {
     public function onDisable() {
         $this->getLogger()->info(TextFormat::RED . "BanUI disabled.");
     }	
-    public function onCommand(CommandSender $sender, Command $cmd, string $label,array $args) : bool {		
+    public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool {		
 		switch($cmd->getName()){		
 			case "bangui":
 				if($sender instanceof Player) {	
